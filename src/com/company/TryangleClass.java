@@ -72,7 +72,8 @@ public class TryangleClass {
     public double GetCircumArea(){
         double r = GetInRaduis();
         double s = (A+B+C)/2;
-        return (A * B * C)/(4 * r * s);
+        double radius = (A * B * C)/(4 * r * s);
+        return Math.PI * (radius * radius);
     }
 
     //finding the height
